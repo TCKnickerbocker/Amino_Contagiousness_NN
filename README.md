@@ -9,28 +9,25 @@ The purpose of this project is to investigate correlations between the contagiou
 ### *Directory Structure:*
 .
 ├── README.md
-├── REAEDME_Figures
-│   ├── Vaccine_Model_Barplot.png
-│   └── epoch_graph_vaccine_model.png
 ├── data
+│   ├── README_Figures
 │   ├── all_sequences.csv
 │   ├── codon_table.txt
 │   ├── old_data
 │   ├── processed_input_data_vacmodel.csv
 │   ├── processed_input_data_vacmodel_info.txt
+│   ├── processed_input_data_vacmodel_train_info.txt
+│   ├── raw_data_small.fasta
 │   └── raw_input_data.fasta
 ├── data_prep
 │   ├── dfCreator.py
-│   ├── input_data_analysis.py
-│   └── plot_codons.py
+│   └── input_data_analysis.py
 └── model
     ├── amino_nn.py
     ├── model_storage
     ├── nn_helpers.py
     ├── result_analysis.py
     └── run_model.py
-
-7 directories, 15 files
 
 
 ### *Data Sourcing:*
@@ -61,3 +58,4 @@ Thus, COVID genomes containing higher frequencies of these aminos are <ins>more 
 
 ### *Notes:*
 - raw_input_data.fasta not pushed to github because too large. Instead, a subset has been pushed.
+
