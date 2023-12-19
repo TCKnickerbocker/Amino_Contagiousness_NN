@@ -64,7 +64,6 @@ learning_rate = 0.0005
 batch_size = 50
 logging_interval = 10
 input_size = X_train.shape[1]  # 21 
-print(input_size)
 hidden_sizes = [256, 128, 64]
 output_size = 1
 

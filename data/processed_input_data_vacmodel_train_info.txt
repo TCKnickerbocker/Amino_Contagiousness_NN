@@ -1,0 +1,3 @@
+
+Standard Deviation of Contagiousness_Score: 40.11
+

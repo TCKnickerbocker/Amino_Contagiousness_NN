@@ -26,15 +26,17 @@ def visualize_correlations(df, y_only=False):
         # Label each bar with its value
         for i, val in enumerate(output_correlations.values):
             ax.text(i, val, f'{val:.2f}', ha='center', va='bottom')
+
+        plt.title('Correlation Bar Plot for Amino Acid Counts and Contagiousness Score')
     ###
 
     ### HEATMAP:
     else:
         plt.figure(figsize=(12, 10))
         sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f', linewidths=.5)
+        plt.title('Correlation Heatmap for Amino Acid Counts and Contagiousness Score')
     ###
         
-    plt.title('Correlation Bar Plot for Amino Acid Counts and Contagiousness Score')
     plt.xlabel('Amino Acids')
     plt.show()
 
